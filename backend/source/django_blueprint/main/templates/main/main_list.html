@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+    <h1>Sample records</h1>
+    <ul>
+        {% for record in records %}
+            <li class="shadow-sm p-3 mb-5 bg-body rounded">
+                <h3>{{ record.name }}</h3>
+                <h4>{{ record.description }}</h4>
+            </li>
+        {% endfor %}
+    </ul>
+ {% endblock content %}
